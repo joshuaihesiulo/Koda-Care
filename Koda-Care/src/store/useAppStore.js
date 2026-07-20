@@ -1,12 +1,9 @@
-import { create } from 'zustand'
+import { create } from 'zustand';
 
-const useAppStore = create((set) => ({
-  screen: 'splash',
-  user: null,
-  patients: [],
-  setScreen: (screen) => set({ screen }),
-  setUser: (user) => set({ user }),
-  setPatients: (patients) => set({ patients }),
-}))
+export const useAppStore = create((set) => ({
+  currentScreen: 'splash', // Options: 'splash', 'mission', 'landing-cta', 'phone', 'verify', 'register', 'dashboard', 'patient-list', 'patient-details'
+  selectedPatient: null,
 
-export default useAppStore
+  setCurrentScreen: (screen) => set({ currentScreen: screen }),
+  setSelectedPatient: (patient) => set({ selectedPatient: patient }),
+}));
