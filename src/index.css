@@ -1,6 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html, body, #root { min-height: 100%; margin: 0; }
-body { font-family: Georgia, 'Times New Roman', serif; background: #f4f4f4; }
