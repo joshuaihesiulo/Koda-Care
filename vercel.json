@@ -1,0 +1,12 @@
+{
+  "framework": "vite",
+  "installCommand": "cd Koda-Care && npm install",
+  "buildCommand": "cd Koda-Care && npm run build",
+  "outputDirectory": "Koda-Care/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
